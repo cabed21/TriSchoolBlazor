@@ -34,9 +34,21 @@ else
     </table>
 }
 
+@if (students != null)
+{
+    <input placeholder="First Name" bind=" @FirstName" /><br />
+    <input placeholder="Last Name Name" bind=" @FirstName" /><br />
+    <input placeholder="School Name" bind=" @FirstName" /><br />
+    <button onclick="@insert"class="btn btn-warning" >Insert</button>
+};
+
 @functions {
     Student[] students;
     string baseUrl = "https://localhost:44323/";
+    string StudentId;
+    string FirstName;
+    string LastName;
+    string School;
 
     protected override async Task OnInitAsync()
     {
@@ -46,5 +58,30 @@ else
     protected async Task load()
     {
         students = await httpClient.GetJsonAsync<Student[]>($"{baseUrl}api/students");
+    }
+
+    protected async Task insert()
+    {
+        string endpoint = $"{baseUrl}apl/students";
+
+        Student student = new Student()
+        {
+            StudentId = Guid.NewGuid().ToString(),
+            FirstName = firstName,
+            LastName = lastName,
+            School = school
+        };
+
+        await httpClient.SendJsonAsync(HttpMethod.Post, endpoint, student);
+        ClearFields();
+        await load();
+    }
+
+    protected void ClearFields()
+    {
+        studentId = string.Empty;
+        firstName = string.Empty;
+        lastName = string.Empty;
+        school = string.Empty;
     }
 }
