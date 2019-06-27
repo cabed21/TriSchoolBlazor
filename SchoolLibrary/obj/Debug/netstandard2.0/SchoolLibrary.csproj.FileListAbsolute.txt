@@ -6,3 +6,7 @@ C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\School
 C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\SchoolLibrary.AssemblyInfo.cs
 C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\SchoolLibrary.dll
 C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\SchoolLibrary.pdb
+C:\Users\Chris\source\repos\School\SchoolLibrary\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\Chris\source\repos\School\SchoolLibrary\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\SchoolLibrary.csprojAssemblyReference.cache
+C:\Users\Chris\source\repos\School\SchoolLibrary\obj\Debug\netstandard2.0\SchoolLibrary.csproj.CopyComplete
